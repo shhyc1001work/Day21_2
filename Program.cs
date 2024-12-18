@@ -125,7 +125,7 @@ class Program
                     return;
                 default:
                     Console.WriteLine("1, 2, 3만 누르십시오");
-                    Thread.Sleep(500);
+                    
                     break;
             }
         }
@@ -160,12 +160,12 @@ class Program
                 {
                     Console.WriteLine($"[{PlayerInventory[input - 1].Name}] 아이템을 버렸습니다.");
                     PlayerInventory.RemoveAt(input - 1);
-                    Thread.Sleep(500);
+                    
                 }
                 else
                 {
                     Console.WriteLine("잘못된 입력입니다.");
-                    Thread.Sleep(500);
+                    
                 }
             }
         }
@@ -201,12 +201,12 @@ class Program
                         PlayerInventory.Add(selectedItem);
                         PlayerMoney -= selectedItem.Price;
                         Console.WriteLine($"[{selectedItem.Name}]을(를) 구매했습니다!");
-                        Thread.Sleep(500);
+                        
                     }
                     else
                     {
                         Console.WriteLine("소지금이 부족합니다.");
-                        Thread.Sleep(500);
+                        
                     }
                 }
                 else
@@ -262,7 +262,6 @@ class Program
         if (PlayerEquipment.Count == 0)
         {
             Console.WriteLine("장착된 장비가 없습니다.");
-            Thread.Sleep(500);
             return;
         }
 
@@ -280,12 +279,10 @@ class Program
             PlayerInventory.Add(selectedItem);
             PlayerEquipment.RemoveAt(input - 1);
             Console.WriteLine($"[{selectedItem.Name}] 탈착 완료!");
-            Thread.Sleep(500);
         }
         else
         {
             Console.WriteLine("잘못된 입력입니다.");
-            Thread.Sleep(500);
         }
     }
 
