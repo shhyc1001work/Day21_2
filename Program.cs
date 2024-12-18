@@ -248,12 +248,12 @@ class Program
             PlayerEquipment.Add(selectedItem);
             PlayerInventory.RemoveAt(input - 1);
             Console.WriteLine($"[{selectedItem.Name}] 장착 완료!");
-            Thread.Sleep(500);
+            
         }
         else
         {
             Console.WriteLine("잘못된 입력입니다.");
-            Thread.Sleep(500);
+            
         }
     }
 
