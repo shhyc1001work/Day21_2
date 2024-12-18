@@ -23,30 +23,7 @@ class Program
 
     static void Main()
     {
-        // 초기 데이터 설정
-        InitializeShopItems();
 
-        // 메인 루프
-        while (true)
-        {
-            Console.Clear();
-            int selectedMenu = MainSelect();
 
-            switch (selectedMenu)
-            {
-                case 0:
-                    EquipMenu();
-                    break;
-                case 1:
-                    InventoryMenu();
-                    break;
-                case 2:
-                    ShopMenu();
-                    break;
-                case 3:
-                    Environment.Exit(0);
-                    break;
-            }
-        }
     }
-
+}
